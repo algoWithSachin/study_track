@@ -24,7 +24,7 @@ A simple web app to track lecture progress during GATE preparation. Built for pe
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/gate-prep-tracker.git
+git clone https://github.com/algoWithSachin/study_track.git
 cd gate-prep-tracker
 ```
 
