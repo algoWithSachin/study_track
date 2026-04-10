@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Track</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="icon" href="{% static 'favicon.png' %}">
+</head>
+<body>
+
+<div class="container">
+  <h1>📚 StudyTrack</h1>
+
+  <div class="add-subject">
+    <input id="name" placeholder="Subject Name">
+    <input id="total" type="number" placeholder="Total Classes">
+    <button onclick="addSubject()">Add</button>
+  </div>
+
+  <div id="subjects"></div>
+</div>
+
+
+
+</body>
+<script src="{% static 'app.js' %}"></script>
+</html>
