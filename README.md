@@ -16,6 +16,7 @@ A simple web app to track lecture progress during GATE preparation. Built for pe
 
 * Django & Django REST Framework
 * HTML, CSS, JavaScript
+* Docker
 
 ---
 
@@ -28,49 +29,34 @@ git clone https://github.com/algoWithSachin/study_track.git
 cd study_track
 ```
 
-### 2. Create virtual environment
-
+### 2. 🚀 Quick Start (Docker)
 ```
-python -m venv .venv
-```
-
-### 3. Activate virtual environment
-
-**Windows**
-
-```
-.venv\Scripts\activate
+docker compose up --build
 ```
 
-**Mac/Linux**
-
-```
-source .venv/bin/activate
-```
-
-### 4. Install dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### 5. Run migrations
-
-```
-python manage.py migrate
-```
-
-### 6. Start development server
-
-```
-python manage.py runserver
-```
-
-### 7. Open in browser
+### 3. Open in browser
 
 ```
 http://127.0.0.1:8000/
 ```
+---
+
+## 🛑 Stop the server
+
+Press:
+
+CTRL + C
+
+### Run again (no rebuild needed):
+```
+docker compose up
+```
+
+### Use ``` docker compose up --build ``` only when:
+
+* requirements.txt changes
+* Dockerfile changes
+* new dependencies added
 
 ---
 
